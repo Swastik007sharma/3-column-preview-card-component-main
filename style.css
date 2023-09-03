@@ -1,0 +1,121 @@
+:root {
+    --clr-primary-300: hsl(31, 77%, 52%);
+    --clr-primary-500: hsl(184, 100%, 22%);
+    --clr-primary-900: hsl(179, 100%, 13%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-100-7: hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-300: hsl(0, 0%, 95%);
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --ff-base1: 'Big Shoulders Display', cursive;
+    --ff-base2: 'Lexend Deca', sans-serif;
+
+    --gap: 2rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 0.925rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.container {
+    margin: 15% 7%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+article:nth-of-type(1) {
+    --bg-color: var(--clr-primary-300);
+    background-color: var(--bg-color);
+}
+
+article:nth-of-type(2) {
+    --bg-color: var(--clr-primary-500);
+    background-color: var(--bg-color);
+}
+
+article:nth-of-type(3) {
+    --bg-color:var(--clr-primary-900);
+    background-color: var(--bg-color);
+}
+
+.card__container {
+    padding: 3rem;
+}
+
+img {
+    margin-bottom: var(--gap);
+}
+
+.card__heading {
+    font-size: 2.5rem;
+    color: var(--clr-neutral-100);
+    font-family: var(--ff-base1);
+    text-transform: uppercase;
+    margin-bottom: var(--gap);
+}
+
+.card__detail {
+    color: var(--clr-neutral-100-7);
+    font-family: var(--ff-base2);
+    line-height: 1.5rem;
+}
+
+.card__button {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    margin-top: var(--gap);
+    color: var(--bg-color);
+    font-family: var(--ff-base2);
+}
+
+.card__button:hover{
+    outline: 0.15rem solid var(--clr-neutral-100);
+    background-color: transparent;
+    color: var(--clr-neutral-100);
+    cursor: pointer;
+}
+
+@media (min-width:750px) {
+    .container {
+        display: flex;
+    }
+}
+
+@media (min-width:1024px) {
+    html {
+        font-size: 1rem;
+    }
+
+    .card__button {
+        margin-top: 5rem;
+    }
+}
+@media (min-width:1050px) {
+    .container {
+        margin: 12% 18%;
+    }
+}
